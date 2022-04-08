@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+var total = "0.00";
+
 //added for paypal integration
 const paypal = require('paypal-rest-sdk');
 
@@ -16,6 +18,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/payScoundrel', function(req, res,next) {
+    total = "22.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -57,6 +60,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payWhatRealityTVSaysAboutUs', function(req, res,next) {
+    total = "20.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -98,6 +102,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTheInvisibleKingdom', function(req, res,next) {
+    total = "18.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -139,6 +144,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payAnthem', function(req, res,next) {
+    total = "19.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -180,6 +186,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payOlgaDiesDreaming', function(req, res,next) {
+    total = "17.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -221,6 +228,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payToParadise', function(req, res,next) {
+    total = "19.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -262,6 +270,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payHowCivilWarsStart', function(req, res,next) {
+    total = "20.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -303,6 +312,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payHowHighWeGoInTheDark', function(req, res,next) {
+    total = "21.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -343,6 +353,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payNotesOnAnExecution', function(req, res,next) {
+    total = "17.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -384,6 +395,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/paySouthToAmerica', function(req, res,next) {
+    total = "22.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -425,6 +437,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payVladimir', function(req, res,next) {
+    total = "19.99"
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -466,6 +479,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTheEmployees', function(req, res,next) {
+    total = "15.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -507,6 +521,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payThankYouMrNixon', function(req, res,next) {
+    total = "24.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -548,6 +563,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payMoonWitchSpiderKing', function(req, res,next) {
+    total = "23.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -589,6 +605,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payGroundsKeeping', function(req, res,next) {
+    total = "17.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -630,6 +647,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTrustThePlan', function(req, res,next) {
+    total = "14.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -671,6 +689,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payHowToTakeOverTheWorld', function(req, res,next) {
+    total = "27.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -712,6 +731,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payAncestorTrouble', function(req, res,next) {
+    total = "26.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -753,6 +773,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payAmericanDirt', function(req, res,next) {
+    total = "13.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -794,6 +815,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTheGreatAlone', function(req, res,next) {
+    total = "18.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -835,6 +857,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payThePaperPalace', function(req, res,next) {
+    total = "18.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -876,6 +899,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTheSilentWife', function(req, res,next) {
+    total = "5.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -917,6 +941,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTheNightingale', function(req, res,next) {
+    total = "16.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -958,6 +983,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTheMaid', function(req, res,next) {
+    total = "16.99"
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -999,6 +1025,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTheSilentPatient', function(req, res,next) {
+    total = "12.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -1040,6 +1067,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payItEndsWithUs', function(req, res,next) {
+    total = "14.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -1081,6 +1109,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payWeWereLiars', function(req, res,next) {
+    total = "9.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -1122,6 +1151,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payPeopleWeMeetOnVacation', function(req, res,next) {
+    total = "20.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -1163,6 +1193,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payTheSevenHusbandsOfEvelynHugo', function(req, res,next) {
+    total = "13.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -1204,6 +1235,7 @@ paypal.payment.create(create_payment_json, function (error, payment) {
 });
 
 router.post('/payBeforeWeWereYours', function(req, res,next) {
+    total = "14.99";
   const create_payment_json = {
     "intent": "sale",
     "payer": {
@@ -1294,7 +1326,7 @@ router.get('/success', function(req, res, next)  {
     "payer_id": payerId,
     "transactions": [{
         "amount": {
-            "currency": "USD",
+            "currency": "CAD",
             "total": "25.00"
         }
     }]
@@ -1308,7 +1340,7 @@ router.get('/success', function(req, res, next)  {
         throw error;
     } else {
         console.log(JSON.stringify(payment));
-        res.render('success', { title: 'Transaction successful' });
+        res.render('success', { title: 'Transaction successful', total: total });
       }
 });
 });
